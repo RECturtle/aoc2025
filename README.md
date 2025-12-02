@@ -9,8 +9,7 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025).
 ├── pyproject.toml  # uv project configuration
 ├── day-N/
 │   ├── input.txt   # my specific input for the challenge
-│   ├── part-1.py
-│   └── part-2.py
+│   └── main.py
 └── README.md
 ```
 
@@ -25,8 +24,8 @@ uv sync
 
 ```bash
 # Run with uv
-uv run day-1/part-1.py
+uv run day-N/main.py day-N/input.txt
 
 # Or use python directly
-python3 day-1/part-1.py
+python3 day-N/main.py day-N/input.txt
 ```
