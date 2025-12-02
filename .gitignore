@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+env/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing and debugging
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Session cookies and personal data
+session.txt
+cookie.txt
+
+# uv
+.python-version
+uv.lock
