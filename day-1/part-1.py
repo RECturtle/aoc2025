@@ -3,7 +3,7 @@ def read_file(file_path):
     directions = []
     with open(file_path, "r") as f:
         for line in f.read().splitlines():
-            directions.append((line[0], int(line[1:], 10)))
+            directions.append((line[0], int(line[1:])))
     return directions
 
 
@@ -33,8 +33,8 @@ def main():
     current_index = 50
     directions = read_file("input.txt")
 
-    for direction in directions:
-        current_index = move(direction[0], direction[1], current_index)
+    for direction, count in directions:
+        current_index = move(direction, count, current_index)
         if current_index == 0:
             zero_count += 1
 

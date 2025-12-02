@@ -3,7 +3,7 @@ def read_file(file_path):
     directions = []
     with open(file_path, "r") as f:
         for line in f.read().splitlines():
-            directions.append((line[0], int(line[1:], 10)))
+            directions.append((line[0], int(line[1:])))
     return directions
 
 
