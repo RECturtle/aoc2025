@@ -1,4 +1,5 @@
 def read_file(file_path):
+    """Read directions from input file."""
     directions = []
     with open(file_path, "r") as f:
         for line in f.read().splitlines():
@@ -7,6 +8,7 @@ def read_file(file_path):
 
 
 def index_wrapping(index):
+    """Wrap index around a circular array of size 100."""
     if index == -1:
         return 99
     if index == 100:
@@ -15,6 +17,7 @@ def index_wrapping(index):
 
 
 def move(direction, count, index, zero_count):
+    """Move along circular array, tracking zero crossings."""
     movement = 1
     if direction == "L":
         movement = -1
