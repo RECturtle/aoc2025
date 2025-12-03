@@ -4,12 +4,9 @@ import sys
 def part1(joltage):
     tens_slice = joltage[:-1]
     tens_max_joltage_index = tens_slice.index(max(tens_slice))
+    ones_max = max(joltage[tens_max_joltage_index + 1 :])
 
-    ones_slice = joltage[tens_max_joltage_index + 1 :]
-    ones_relative_index = ones_slice.index(max(ones_slice))
-    ones_max_joltage_index = tens_max_joltage_index + 1 + ones_relative_index
-
-    return int(joltage[tens_max_joltage_index] + joltage[ones_max_joltage_index])
+    return int(joltage[tens_max_joltage_index] + ones_max)
 
 
 def part2(joltage):
