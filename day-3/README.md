@@ -1,0 +1,1 @@
+Link to day 2 challenge: <https://adventofcode.com/2025/day/3>
