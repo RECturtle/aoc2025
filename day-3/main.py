@@ -3,10 +3,10 @@ import sys
 
 def part1(joltage):
     tens_slice = joltage[:-1]
-    tens_max_joltage_index = tens_slice.index(max(tens_slice))
-    ones_max = max(joltage[tens_max_joltage_index + 1 :])
+    tens_max_index = tens_slice.index(max(tens_slice))
+    ones_max = max(joltage[tens_max_index + 1 :])
 
-    return int(joltage[tens_max_joltage_index] + ones_max)
+    return int(joltage[tens_max_index] + ones_max)
 
 
 def part2(joltage):
